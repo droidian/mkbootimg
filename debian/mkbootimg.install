@@ -1,0 +1,3 @@
+usr/bin/unpack_bootimg
+usr/bin/mkbootimg
+usr/bin/repack_bootimg

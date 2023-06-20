@@ -1,0 +1,16 @@
+Source: mkbootimg
+Maintainer: Bardia Moshiri <fakeshell@bardia.tech>
+Section: devel
+Priority: optional
+Build-Depends: debhelper (>= 12), dh-exec
+Standards-Version: 4.5.0
+Homepage: https://github.com/LineageOS/android_system_tools_mkbootimg
+Vcs-Browser: https://github.com/droidian/mkbootimg
+Vcs-Git: https://github.com/droidian/mkbootimg.git
+
+Package: mkbootimg
+Architecture: all
+Depends: python3,
+         ${misc:Depends}
+Description: Creates Android boot images that includes kernel image and ramdisk,
+             in a special format which can be used with fastboot.

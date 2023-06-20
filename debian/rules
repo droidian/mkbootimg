@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	install -D -m 0755 mkbootimg.py debian/tmp/usr/bin/mkbootimg
+	install -D -m 0755 unpack_bootimg.py debian/tmp/usr/bin/unpack_bootimg
+	install -D -m 0755 repack_bootimg.py debian/tmp/usr/bin/repack_bootimg
